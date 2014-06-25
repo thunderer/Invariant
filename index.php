@@ -21,4 +21,7 @@
 </div>
 <?php endwhile; ?>
 
+<div class="nav nav-prev"><?php next_posts_link('&laquo;'); ?></div>
+<div class="nav nav-next"><?php previous_posts_link('&raquo;'); ?></div>
+
 <?php get_footer(); ?>

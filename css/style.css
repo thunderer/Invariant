@@ -155,6 +155,44 @@ h1, h2, h3, h4
     width: 220px;
     }
 
+.nav
+    {
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    position: relative;
+    }
+
+.nav:hover
+    {
+    background: rgba(0, 0, 0, 0.5);
+    }
+
+.nav a
+    {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color: #FFF;
+    padding: 5px 0;
+    }
+
+.nav a:hover
+    {
+    color: #000;
+    }
+
+.nav-prev
+    {
+    float: left;
+    left: -10px;
+    }
+
+.nav-next
+    {
+    float: right;
+    left: 10px;
+    }
+
 /* --- SPECIFIC ------------------------------------------------------------ */
 
 .header
@@ -369,7 +407,7 @@ h1, h2, h3, h4
 .footer
     {
     text-align: center;
-    padding: 15px 0;
+    padding: 45px 0 0 0;
     font: 24px Condiment;
     }
 
