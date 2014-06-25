@@ -316,6 +316,51 @@ blockquote
     background: #CCC;
     }
 
+.container-short #respond h3
+    {
+    display: none;
+    }
+
+.comment-form
+    {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+    width: 560px;
+    }
+
+.comment-form p
+    {
+    margin: 5px auto;
+    }
+
+.comment-form p:first-child
+    {
+    margin-top: 0;
+    }
+
+.comment-form label
+    {
+    display: block;
+    width: 100px;
+    }
+
+.comment-form input, .comment-form textarea
+    {
+    width: 550px;
+    border: 1px solid #999;
+    padding: 5px;
+    font: inherit;
+    }
+
+.comment-form input[type="submit"]
+    {
+    width: 200px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    border: none;
+    }
+
 .footer
     {
     text-align: center;
