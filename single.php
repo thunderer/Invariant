@@ -7,7 +7,10 @@
 </div>
 <div class="container-short">
     <div class="post">
-        <div class="post-content"><?php the_content(); ?></div>
+        <div class="post-content">
+            <?php the_post_thumbnail('thumbnail'); ?>
+            <?php the_content(); ?>
+        </div>
     </div>
     <div class="post-info">
         <div class="date"><?php the_date('d.m.Y'); ?></div>

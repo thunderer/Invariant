@@ -16,9 +16,13 @@
     'format' => 'html5',
     )); ?>
 </div>
+<?php if(have_comments()): ?>
 <div class="container-inner container-header">
     Komentarze (<?php echo get_comments_number(); ?>)
 </div>
 <div class="container-short">
-    <ul class="comments"><?php wp_list_comments(); ?></ul>
+    <ul class="comments">
+        <?php wp_list_comments(); ?>
+    </ul>
 </div>
+<?php endif; ?>
