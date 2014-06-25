@@ -8,7 +8,7 @@
 <div class="toolbox toolbox-left"></div>
 <div class="toolbox toolbox-right"></div>
 
-        <script language="javascript" src="/wp-content/themes/typography/js/highlight.pack.js"></script>
+        <script language="javascript" src="/wp-content/themes/invariant/js/highlight.pack.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>

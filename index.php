@@ -16,7 +16,6 @@
         <div class="category"><?php the_category(); ?></div>
     </div>
 </div>
-
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
