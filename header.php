@@ -14,9 +14,11 @@
 <?php get_sidebar(); ?>
 
 <div class="container-outer">
-<div class="header">
-    <a href="<?php bloginfo('url'); ?>">
-        <div class="title"><?php bloginfo('title'); ?></div>
-        <div class="subtitle"><?php bloginfo('description'); ?></div>
-    </a>
+    <div class="header">
+        <a href="<?php bloginfo('url'); ?>">
+            <div class="title"><?php bloginfo('title'); ?></div>
+            <div class="subtitle"><?php bloginfo('description'); ?></div>
+        </a>
+    </div>
 </div>
+<div class="container-outer">

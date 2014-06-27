@@ -3,10 +3,10 @@ register_sidebar(array(
     'name' => 'Right',
     'id' => 'sidebar-right',
     'description' => 'Right sidebar',
-    'before_widget' => '<div class="sidebar-short">',
+    'before_widget' => '<div class="sidebar-widget"><div class="sidebar-short">',
     'before_title'  => '<div class="sidebar-header">',
     'after_title'   => '</div><div class="sidebar-content">',
-    'after_widget' => '</div></div>',
+    'after_widget' => '</div></div></div>',
     ));
 
 add_shortcode('code', function($attributes, $content = null) {

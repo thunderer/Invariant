@@ -1,3 +1,6 @@
+</div>
+<div class="container-outer">
+
 <div class="footer">
     Design && Code :: <a href="http://kowalczyk.cc">Tomasz Kowalczyk</a> (c)<?php echo date('Y'); ?>
 </div>
