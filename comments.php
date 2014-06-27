@@ -1,7 +1,7 @@
-<div class="container-inner container-header">
-    Skomentuj
-</div>
 <div class="container-short">
+    <div class="container-header">
+        Skomentuj
+    </div>
 <?php comment_form(array(
     'title_reply' => '',
     'comment_notes_before' => '',
@@ -17,10 +17,10 @@
     )); ?>
 </div>
 <?php if(have_comments()): ?>
-<div class="container-inner container-header">
-    Komentarze (<?php echo get_comments_number(); ?>)
-</div>
 <div class="container-short">
+    <div class="container-header">
+        Komentarze (<?php echo get_comments_number(); ?>)
+    </div>
     <ul class="comments">
         <?php wp_list_comments(); ?>
     </ul>
