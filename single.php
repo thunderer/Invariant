@@ -2,15 +2,22 @@
 
 <?php while(have_posts()): ?>
 <?php the_post(); ?>
-<div class="container-short">
-    <div class="container-header">
+<?php $post = get_post(); ?>
+<?php $imageUrl = wp_get_attachment_thumb_url(get_post_thumbnail_id($post->ID)); ?>
+<div class="block post">
+    <div class="block-header post-header-image"
+        style="background-image: url('<?php echo $imageUrl; ?>');">
+        &nbsp;
+    </div>
+    <div class="block-header post-header">
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
     </div>
-    <div class="post">
-        <div class="post-content">
-            <?php the_post_thumbnail('thumbnail'); ?>
-            <?php the_content(); ?>
-        </div>
+    <div class="block-header post-header-image"
+        style="background-image: url('<?php echo $imageUrl; ?>'); background-position: bottom center;">
+        &nbsp;
+    </div>
+    <div class="block-content post-content">
+        <?php the_content(); ?>
     </div>
     <div class="post-info">
         <div class="date"><?php the_date('d.m.Y'); ?></div>

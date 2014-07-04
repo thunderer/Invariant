@@ -3,10 +3,10 @@ register_sidebar(array(
     'name' => 'Right',
     'id' => 'sidebar-right',
     'description' => 'Right sidebar',
-    'before_widget' => '<div class="sidebar-widget"><div class="sidebar-short">',
-    'before_title'  => '<div class="sidebar-header">',
-    'after_title'   => '</div><div class="sidebar-content">',
-    'after_widget' => '</div></div></div>',
+    'before_widget' => '<div class="block widget">',
+    'before_title'  => '<div class="block-header">',
+    'after_title'   => '</div><div class="block-content">',
+    'after_widget' => '</div></div>',
     ));
 
 add_shortcode('code', function($attributes, $content = null) {
@@ -16,6 +16,8 @@ add_shortcode('code', function($attributes, $content = null) {
         }
     $content = str_replace("</p>\n<p>", "\n\n", $content);
     $content = preg_replace('@<br\s*/?>@', '', $content);
+    // if("\n" == $content[0]) { $content = mb_substr($content, 1); }
+    $content .= "\n";
     return '<pre><code lang="'.@$attributes['lang'].'">'.$content.'</code></pre>';
     });
 

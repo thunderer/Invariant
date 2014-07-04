@@ -10,15 +10,22 @@
     <body>
 
 <div class="container">
+<!--    <div class="container-left">-->
 
-<?php get_sidebar(); ?>
-
-<div class="container-outer">
-    <div class="header">
-        <a href="<?php bloginfo('url'); ?>">
-            <div class="title"><?php bloginfo('title'); ?></div>
-            <div class="subtitle"><?php bloginfo('description'); ?></div>
-        </a>
-    </div>
+<div class="block logo">
+    <a href="<?php bloginfo('url'); ?>">
+        <span class="title"><?php bloginfo('title'); ?></span>
+        <span class="subtitle"><?php bloginfo('description'); ?></span>
+    </a>
 </div>
-<div class="container-outer">
+
+<div class="block">
+    <ul class="pages">
+        <?php wp_list_pages('title_li='); ?>
+        <li>
+            <form role="search" method="get" id="searchform" class="searchform" action="<?php bloginfo('url'); ?>">
+            <input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="szukaj..." />
+            </form>
+        </li>
+    </ul>
+</div>
