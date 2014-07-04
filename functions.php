@@ -16,8 +16,8 @@ add_shortcode('code', function($attributes, $content = null) {
         }
     $content = str_replace("</p>\n<p>", "\n\n", $content);
     $content = preg_replace('@<br\s*/?>@', '', $content);
-    // if("\n" == $content[0]) { $content = mb_substr($content, 1); }
-    $content .= "\n";
+    if("\n" == $content[0]) { $content = mb_substr($content, 1); }
+    // $content .= "\n";
     return '<pre><code lang="'.@$attributes['lang'].'">'.$content.'</code></pre>';
     });
 

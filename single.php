@@ -12,10 +12,6 @@
     <div class="block-header post-header">
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
     </div>
-    <div class="block-header post-header-image"
-        style="background-image: url('<?php echo $imageUrl; ?>'); background-position: bottom center;">
-        &nbsp;
-    </div>
     <div class="block-content post-content">
         <?php the_content(); ?>
     </div>

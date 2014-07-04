@@ -1,5 +1,6 @@
 <div class="block post">
     <div class="block-header post-header">Skomentuj</div>
+    <div class="post-content">
 <?php comment_form(array(
     'title_reply' => '',
     'comment_notes_before' => '',
@@ -13,13 +14,14 @@
     'label_submit' => 'Wyślij',
     'format' => 'html5',
     )); ?>
+    </div>
 </div>
 <?php if(have_comments()): ?>
 <div class="block post">
     <div class="block-header post-header">
         Komentarze (<?php echo get_comments_number(); ?>)
     </div>
-    <ul class="comments">
+    <ul class="post-content comments">
         <?php wp_list_comments(); ?>
     </ul>
 </div>
