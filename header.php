@@ -24,7 +24,7 @@
         <?php wp_list_pages('title_li='); ?>
         <li>
             <form role="search" method="get" id="searchform" class="searchform" action="<?php bloginfo('url'); ?>">
-            <input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="szukaj..." />
+            <input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="Szukaj" />
             </form>
         </li>
     </ul>

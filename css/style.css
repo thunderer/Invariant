@@ -158,18 +158,26 @@ pre>code
 .pages li input
     {
     width: 100%;
-    padding: 12px 0 9px 0;
+    padding: 10px 0;
     text-align: center;
     border: none;
     margin: 0;
+    font-size: 14px;
     font-family: Merriweather, serif;
-    background: #FFF;
+    background: transparent;
+    color: #FFF;
     }
+
+.pages li input::-webkit-input-placeholder { color: #FFF; font: 16px 'Poiret One'; font-weight: bold; }
+.pages li input:-moz-placeholder { color: #FFF; opacity:  1; }
+.pages li input::-moz-placeholder { color: #FFF; opacity:  1; }
+.pages li input:-ms-input-placeholder { color: #FFF; }
 
 .pages li input:focus
     {
     background: #FFF;
     outline: none;
+    color: #000;
     }
 
 .post
@@ -223,7 +231,7 @@ pre>code
     display: table;
     table-layout: fixed;
     font-size: 10px;
-    min-height: 50px;
+    min-height: 40px;
     }
 
 .post .post-info div
@@ -231,12 +239,13 @@ pre>code
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    background: #FFF;
     }
 
 .post .post-info .date
     {
     width: 100px;
-    background: rgba(255, 255, 255, 0.6);
+    /*background: rgba(255, 255, 255, 0.6);*/
     font: 14px 'Poiret One';
     font-weight: bold;
     }
@@ -244,7 +253,7 @@ pre>code
 .post .post-info .tags
     {
     width: 380px;
-    background: rgba(255, 255, 255, 0.9);
+    /*background: rgba(255, 255, 255, 0.9);*/
     }
 
 .post .post-info .tags a
@@ -255,7 +264,7 @@ pre>code
 .post .post-info .category
     {
     width: 100px;
-    background: rgba(255, 255, 255, 0.6);
+    /*background: rgba(255, 255, 255, 0.6);*/
     }
 
 .post .post-info .category a
