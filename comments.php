@@ -17,11 +17,11 @@
     </div>
 </div>
 <?php if(have_comments()): ?>
-<div class="block post">
-    <div class="block-header post-header">
+<div class="block comments">
+    <div class="block-header comments-header">
         Komentarze (<?php echo get_comments_number(); ?>)
     </div>
-    <ul class="post-content comments">
+    <ul class="comments-content">
         <?php wp_list_comments(); ?>
     </ul>
 </div>

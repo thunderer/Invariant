@@ -13,19 +13,19 @@ html, body
         #EEE no-repeat center center fixed;
     background-size: cover;
     color: #000;
-    font: 14px Merriweather, serif;
+    font: 16px 'PT Sans';
     }
 
 a
     {
     color: #000;
+    text-decoration: none;
+    outline: none;
     }
 
-ul
+a:hover
     {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    text-decoration: underline;
     }
 
 pre>code
@@ -34,6 +34,26 @@ pre>code
     left: -10px;
     width: 500px;
     white-space: pre-wrap;
+    font: 14px monospace;
+    }
+
+h1, h2, h3, h4
+    {
+    font-family: 'Poiret One', sans-serif;
+    text-align: center;
+    }
+
+blockquote
+    {
+    background: #333;
+    color: #FFF;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    left: -10px;
+    width: 500px;
+    font-style: italic;
     }
 
 /* --- LAYOUT -------------------------------------------------------------- */
@@ -70,26 +90,28 @@ pre>code
 .block-header a
     {
     display: block;
-    text-decoration: none;
     color: #000;
     text-align: center;
     margin: 0 auto;
     }
 
+.block-header a:hover
+    {
+    text-decoration: none;
+    }
+
 .footer
     {
-    color: #000;
     text-align: center;
-    font: 20px 'Poiret One';
+    font: 16px 'Poiret One';
     font-weight: bold;
-    background: rgba(255, 255, 255, 0.9);
+    background: #FFF;
     padding: 10px 0;
     margin: 0;
     }
 
 .footer a
     {
-    color: #000;
     }
 
 /* --- CONTENT ------------------------------------------------------------- */
@@ -104,10 +126,14 @@ pre>code
 
 .logo a
     {
-    text-decoration: none;
     font-family: 'Poiret One', sans-serif;
     font-weight: bold;
     color: #FFF;
+    }
+
+.logo a:hover
+    {
+    text-decoration: none;
     }
 
 .logo .title
@@ -128,6 +154,9 @@ pre>code
     display: table;
     width: 100%;
     table-layout: fixed;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     }
 
 .pages li
@@ -143,7 +172,6 @@ pre>code
     padding: 10px 0;
     text-align: center;
     background: transparent;
-    text-decoration: none;
     color: #FFF;
     font: 16px 'Poiret One';
     font-weight: bold;
@@ -153,6 +181,7 @@ pre>code
     {
     background: rgba(255, 255, 255, 0.3);
     color: #FFF;
+    text-decoration: none;
     }
 
 .pages li input
@@ -162,9 +191,9 @@ pre>code
     text-align: center;
     border: none;
     margin: 0;
-    font-size: 14px;
-    font-family: Merriweather, serif;
+    font: 16px 'Poiret One';
     background: transparent;
+    font-weight: bold;
     color: #FFF;
     }
 
@@ -172,6 +201,11 @@ pre>code
 .pages li input:-moz-placeholder { color: #FFF; opacity:  1; }
 .pages li input::-moz-placeholder { color: #FFF; opacity:  1; }
 .pages li input:-ms-input-placeholder { color: #FFF; }
+
+.pages li input:hover
+    {
+    background: rgba(255, 255, 255, 0.3);
+    }
 
 .pages li input:focus
     {
@@ -193,25 +227,23 @@ pre>code
 
 .post .post-header
     {
+    height: 150px;
+    min-height: 150px;
     font: 36px 'Poiret One';
     font-weight: bold;
     background: rgba(0, 0, 0, 0.8);
     color: #FFF;
     text-align: center;
+    padding: 5px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 500px;
     }
 
 .post .post-header-image
     {
-    height: 50px;
     background-size: 30%;
     background-position: 50% 50%;
-    }
-
-.post .post-header a
-    {
-    vertical-align: middle;
-    padding: 10px;
-    color: #FFF;
     }
 
 .post .post-content
@@ -223,6 +255,13 @@ pre>code
 .post .post-content p
     {
     margin: 10px 0;
+    text-indent: 2em;
+    }
+
+.post .post-content p:first-child, .post .post-content p:last-child
+    {
+    margin: 0;
+    text-indent: 2em;
     }
 
 .post .post-info
@@ -230,8 +269,9 @@ pre>code
     clear: both;
     display: table;
     table-layout: fixed;
-    font-size: 10px;
+    font-size: 11px;
     min-height: 40px;
+    border-top: 1px solid #999;
     }
 
 .post .post-info div
@@ -239,53 +279,71 @@ pre>code
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    background: #FFF;
-    }
-
-.post .post-info .date
-    {
-    width: 100px;
-    /*background: rgba(255, 255, 255, 0.6);*/
-    font: 14px 'Poiret One';
-    font-weight: bold;
+    background: #EEE;
     }
 
 .post .post-info .tags
     {
-    width: 380px;
-    /*background: rgba(255, 255, 255, 0.9);*/
-    }
-
-.post .post-info .tags a
-    {
-    text-decoration: none;
+    width: 400px;
+    padding: 0 10px;
     }
 
 .post .post-info .category
     {
     width: 100px;
-    /*background: rgba(255, 255, 255, 0.6);*/
+    }
+
+.post .post-info .category ul
+    {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     }
 
 .post .post-info .category a
     {
-    text-decoration: none;
     font: 14px 'Poiret One';
     font-weight: bold;
     display: block;
     padding: 13px 0;
     }
 
-.post .post-info .category a:hover
+.comments
     {
-    background: rgba(0, 0, 0, 0.7);
-    color: #FFF;
+    text-align: justify;
     }
 
-.widget
+.comments .comments-header
     {
-    padding: 10px;
+    height: 150px;
+    min-height: 150px;
+    font: 36px 'Poiret One';
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    text-align: center;
+    padding: 5px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 500px;
+    }
+
+.comments .comments-content
+    {
+    }
+
+.comments ul
+    {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }
+
+.comments ul li
+    {
     background: #FFF;
+    border-top: 1px solid #999;
+    padding: 10px;
     }
 
 /* --- WORDPRESS ----------------------------------------------------------- */

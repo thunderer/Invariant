@@ -7,22 +7,14 @@
 <div class="block post">
     <div class="block-header post-header-image"
         style="background-image: url('<?php echo $imageUrl; ?>');">
-        &nbsp;
+        <a class="post-header" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
     </div>
-    <div class="block-header post-header">
-        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-    </div>
-<!--    <div class="block-header post-header-image"-->
-<!--        style="background-image: url('--><?php //echo $imageUrl; ?><!--'); background-position: bottom center;">-->
-<!--        &nbsp;-->
-<!--    </div>-->
     <div class="block-content post-content">
         <?php the_excerpt(); ?>
     </div>
     <div class="post-info">
-        <div class="date"><?php the_date('d.m.Y'); ?></div>
-        <div class="tags"><?php the_tags('', ', ', ''); ?></div>
         <div class="category"><?php the_category(); ?></div>
+        <div class="tags"><?php the_tags('', ', ', ''); ?></div>
     </div>
 </div>
 <?php endwhile; ?>
