@@ -252,6 +252,18 @@ blockquote
     background: #FFF;
     }
 
+.post-content a
+    {
+    background: #CCC;
+    padding: 0 10px;
+    font-style: italic;
+    }
+
+.post-content a:hover
+    {
+    background: #999;
+    }
+
 .post .post-content p
     {
     margin: 10px 0;
