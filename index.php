@@ -5,8 +5,7 @@
 <?php $post = get_post(); ?>
 <?php $imageUrl = wp_get_attachment_thumb_url(get_post_thumbnail_id($post->ID)); ?>
 <div class="block post">
-    <div class="block-header post-header-image"
-        style="background-image: url('<?php echo $imageUrl; ?>');">
+    <div class="block-header post-header-image">
         <a class="post-header" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
     </div>
     <div class="block-content post-content">

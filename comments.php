@@ -1,6 +1,6 @@
-<div class="block post">
-    <div class="block-header post-header">Skomentuj</div>
-    <div class="post-content">
+<div class="block comments">
+    <div class="block-header comments-header">Skomentuj</div>
+    <div class="comments-form">
 <?php comment_form(array(
     'title_reply' => '',
     'comment_notes_before' => '',
