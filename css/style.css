@@ -8,7 +8,7 @@ html, body
     margin: 0;
     padding: 0;
     border: none;
-    background: #EEE no-repeat center center fixed;
+    background: #EFEFEF no-repeat center center fixed;
     background-size: cover;
     color: #000;
     font: 16px 'PT Sans Narrow';
@@ -162,9 +162,15 @@ blockquote
     font-size: 16px;
     }
 
+.pages li:first-child a
+    {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    }
+
 .pages li a:hover
     {
-    background: rgba(0, 0, 0, 0.3);
+    background: #EEE;
     color: #000;
     text-decoration: none;
     }
@@ -181,10 +187,10 @@ blockquote
     color: #000;
     }
 
-.pages li input::-webkit-input-placeholder { color: #000; font-size: 16px; font-weight: bold; }
-.pages li input:-moz-placeholder { color: #000; opacity:  1; }
-.pages li input::-moz-placeholder { color: #000; opacity:  1; }
-.pages li input:-ms-input-placeholder { color: #000; }
+.pages li input::-webkit-input-placeholder { color: #999; font-size: 16px; font-weight: bold; }
+.pages li input:-moz-placeholder { color: #999; opacity:  1; }
+.pages li input::-moz-placeholder { color: #999; opacity:  1; }
+.pages li input:-ms-input-placeholder { color: #999; }
 
 .pages li input:hover
     {
@@ -193,9 +199,11 @@ blockquote
 
 .pages li input:focus
     {
-    background: #FFF;
+    background: #EEE;
     outline: none;
     color: #000;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     }
 
 .post
@@ -213,13 +221,17 @@ blockquote
     {
     font-size: 30px;
     text-align: center;
-    padding: 10px 0 0 0;
+    padding: 10px 0 10px 0;
+    background: #EEE;
     }
 
 .post .post-header-image
     {
     background-size: 30%;
     background-position: 50% 50%;
+    height: 100px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     }
 
 .post .post-content
@@ -257,7 +269,10 @@ blockquote
     display: table;
     table-layout: fixed;
     font-size: 12px;
-    padding: 0 0 10px 0;
+    padding: 5px 0;
+    background: #EEE;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     }
 
 .post .post-info div
