@@ -1,5 +1,5 @@
 /* --- TAGS ---------------------------------------------------------------- */
-* { box-sizing: border-box; }
+/** { box-sizing: border-box; }*/
 
 html, body
     {
@@ -8,15 +8,16 @@ html, body
     margin: 0;
     padding: 0;
     border: none;
-    background: #EFEFEF no-repeat center center fixed;
+    background: url('http://images5.alphacoders.com/343/343139.jpg') #EEE no-repeat center center fixed;
     background-size: cover;
     color: #000;
     font: 16px 'PT Sans Narrow';
     }
 
-input
+input, textarea
     {
     font-family: inherit;
+    box-sizing: border-box;
     }
 
 a
@@ -35,9 +36,6 @@ pre>code
     {
     white-space: pre-wrap;
     font: 14px monospace;
-    position: relative;
-    left: -10px;
-    width: 498px;
     }
 
 h1, h2, h3, h4
@@ -52,9 +50,6 @@ blockquote
     display: block;
     margin: 0;
     padding: 10px;
-    position: relative;
-    left: -10px;
-    width: 500px;
     font-style: italic;
     }
 
@@ -63,17 +58,20 @@ blockquote
 .container
     {
     width: 500px;
-    margin: 0 auto;
+    margin: 0 0 0 100px;
+    background: #FFF;
+    padding: 0 10px;
+    border-left: 10px solid rgba(0, 0, 0, 0.1);
+    border-right: 10px solid rgba(0, 0, 0, 0.1);
+    outline: rgba(0, 0, 0, 0.1) solid 10px;
+    min-height: 100%;
     }
 
 .block
     {
     width: 100%;
     margin: 10px 0;
-    border-radius: 5px;
     background: #FFF;
-    box-shadow: 0 0 5px #999;
-    border: 1px solid #999;
     }
 
 .block-header
@@ -99,10 +97,7 @@ blockquote
     text-align: center;
     font-size: 16px;
     padding: 10px 0;
-    }
-
-.footer a
-    {
+    margin: 0;
     }
 
 /* --- CONTENT ------------------------------------------------------------- */
@@ -111,7 +106,7 @@ blockquote
     {
     text-align: center;
     padding: 20px 0 30px 0;
-    margin-bottom: 0;
+    margin: 0;
     }
 
 .logo a
@@ -164,8 +159,6 @@ blockquote
 
 .pages li:first-child a
     {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
     }
 
 .pages li a:hover
@@ -184,7 +177,7 @@ blockquote
     margin: 0;
     font-size: 16px;
     background: transparent;
-    color: #000;
+    color: #999;
     }
 
 .pages li input::-webkit-input-placeholder { color: #999; font-size: 16px; font-weight: bold; }
@@ -202,8 +195,6 @@ blockquote
     background: #EEE;
     outline: none;
     color: #000;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
     }
 
 .post
@@ -230,8 +221,6 @@ blockquote
     background-size: 30%;
     background-position: 50% 50%;
     height: 100px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
     }
 
 .post .post-content
@@ -271,8 +260,6 @@ blockquote
     font-size: 12px;
     padding: 5px 0;
     background: #EEE;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     }
 
 .post .post-info div
@@ -330,14 +317,18 @@ blockquote
 
 .comments ul li
     {
-    background: #FFF;
-    border-top: 1px solid #999;
+    background: #EEE;
     padding: 10px;
+    margin: 5px 0 0 0;
+    }
+
+.comments ul li:hover
+    {
+    background: #DDD;
     }
 
 .comments-form
     {
-    padding: 10px;
     }
 
 .comments-form h3
@@ -347,7 +338,7 @@ blockquote
 
 .comments-form p
     {
-    margin: 0;
+    margin: 0 0 1px 0;
     }
 
 .comments-form input, .comments-form textarea
@@ -356,11 +347,15 @@ blockquote
     width: 100%;
     padding: 5px;
     margin: 0;
+    border: none;
+    background: #EEE;
     }
 
 .comments-form input[type="submit"]
     {
     padding: 0;
+    width: 200px;
+    margin: 0 auto;
     }
 
 /* --- WORDPRESS ----------------------------------------------------------- */
