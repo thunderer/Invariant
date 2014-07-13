@@ -1,5 +1,4 @@
 /* --- TAGS ---------------------------------------------------------------- */
-/** { box-sizing: border-box; }*/
 
 html, body
     {
@@ -8,8 +7,7 @@ html, body
     margin: 0;
     padding: 0;
     border: none;
-    background: url('http://images5.alphacoders.com/343/343139.jpg') #EEE no-repeat center center fixed;
-    background-size: cover;
+    background: #333;
     color: #000;
     font: 16px 'PT Sans Narrow';
     }
@@ -58,7 +56,7 @@ blockquote
 .container
     {
     width: 500px;
-    margin: 0 0 0 100px;
+    margin: 0 auto;
     background: #FFF;
     padding: 0 10px;
     border-left: 10px solid rgba(0, 0, 0, 0.1);
@@ -204,8 +202,9 @@ blockquote
 
 .post img
     {
-    float: left;
-    margin: 0 10px 10px 0;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
     }
 
 .post .post-header
@@ -356,11 +355,4 @@ blockquote
     padding: 0;
     width: 200px;
     margin: 0 auto;
-    }
-
-/* --- WORDPRESS ----------------------------------------------------------- */
-
-.container-right ul ul
-    {
-    margin-left: 20px;
     }
