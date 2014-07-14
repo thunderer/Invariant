@@ -7,7 +7,10 @@ html, body
     margin: 0;
     padding: 0;
     border: none;
-    background: #333;
+    background:
+        url('http://images5.alphacoders.com/343/343139.jpg')
+        #333 center center fixed;
+    background-size: cover;
     color: #000;
     font: 16px 'PT Sans Narrow';
     }
@@ -355,4 +358,25 @@ blockquote
     padding: 0;
     width: 200px;
     margin: 0 auto;
+    }
+
+.nav
+    {
+    font-size: 24px;
+    }
+
+.nav-prev
+    {
+    float: left;
+    }
+
+.nav-next
+    {
+    text-align: right;
+    }
+
+.nav a
+    {
+    display: inline;
+    font-weight: bold;
     }
