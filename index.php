@@ -21,9 +21,9 @@
 </div>
 <?php endwhile; ?>
 
-<div class="block">
-    <div class="nav nav-prev"><?php next_posts_link('<b>&laquo;</b> poprzednie'); ?></div>
-    <div class="nav nav-next"><?php previous_posts_link('następne <b>&raquo;</b>'); ?></div>
+<div class="block nav">
+    <div class="nav-item nav-prev"><?php next_posts_link('<b>&laquo;</b> poprzednie'); ?></div>
+    <div class="nav-item nav-next"><?php previous_posts_link('następne <b>&raquo;</b>'); ?></div>
 </div>
 
 <?php get_footer(); ?>

@@ -362,6 +362,12 @@ blockquote
 
 .nav
     {
+    clear: both;
+    height: 40px;
+    }
+
+.nav-item
+    {
     font-size: 24px;
     }
 
