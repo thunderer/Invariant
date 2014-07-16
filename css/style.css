@@ -378,5 +378,12 @@ blockquote
 .nav a
     {
     display: inline;
-    font-weight: bold;
+    text-decoration: none;
+    padding: 0 5px;
+    }
+
+.nav a:hover
+    {
+    background: #333;
+    color: #FFF;
     }
