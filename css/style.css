@@ -12,7 +12,7 @@ html, body
         #333 center center fixed;
     background-size: cover;
     color: #000;
-    font: 16px 'PT Sans Narrow';
+    font: 18px 'PT Sans Narrow';
     }
 
 input, textarea
@@ -66,6 +66,7 @@ blockquote
     border-left: 10px solid rgba(0, 0, 0, 0.1);
     border-right: 10px solid rgba(0, 0, 0, 0.1);
     outline: rgba(0, 0, 0, 0.1) solid 10px;
+    /*box-shadow: 0 0 10px #000;*/
     }
 
 .block
@@ -220,7 +221,6 @@ blockquote
 
 .post .post-header-image
     {
-    background-size: 30%;
     background-position: 50% 50%;
     height: 100px;
     }
