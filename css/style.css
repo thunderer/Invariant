@@ -58,7 +58,7 @@ blockquote
 
 .container
     {
-    max-width: 500px;
+    max-width: 750px;
     min-height: 100%;
     margin: 0 auto;
     background: #FFF;
@@ -272,25 +272,26 @@ blockquote
     padding: 5px 0 5px 0;
     box-shadow: 0 0 5px #000;
     background-position: 0 100%;
+    width: 100%;
     }
 
 .post .post-info div
     {
-    display: table-cell;
     text-align: center;
-    vertical-align: middle;
     background: rgba(255, 255, 255, 0.8);
     padding: 5px 0;
+    float: left;
+    min-height: 20px;
     }
 
 .post .post-info .tags
     {
-    width: 400px;
+    width: 80%;
     }
 
 .post .post-info .category
     {
-    width: 100px;
+    width: 20%;
     }
 
 .post .post-info .category ul
