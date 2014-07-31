@@ -8,12 +8,12 @@
     <div class="block-header post-header-image" style="background-image: url('<?php echo $imageUrl; ?>')">
         <a class="post-header" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
     </div>
-    <div class="block-content post-content">
-        <?php is_home() ? the_excerpt() : the_content(); ?>
-    </div>
-    <div class="post-info" style="background-image: url('<?php echo $imageUrl; ?>')">
+    <div class="post-info">
         <div class="category"><?php the_category(); ?></div>
         <div class="tags"><?php the_tags('', ', ', ''); ?></div>
+    </div>
+    <div class="block-content post-content">
+        <?php is_home() ? the_excerpt() : the_content(); ?>
     </div>
 </div>
 <?php if(!is_home()) { comments_template(); } ?>

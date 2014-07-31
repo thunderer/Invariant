@@ -216,7 +216,7 @@ blockquote
     font-size: 30px;
     text-align: center;
     padding: 10px 0 10px 0;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     }
 
 .post-header a
@@ -234,9 +234,9 @@ blockquote
 
 .post .post-content
     {
-    padding: 10px;
+    padding: 0 10px 10px 10px;
     min-height: 150px;
-    margin: 5px 0 0 0;
+    margin: 0 0 0 0;
     }
 
 .post-content a
@@ -269,16 +269,19 @@ blockquote
     display: table;
     table-layout: fixed;
     font-size: 12px;
-    padding: 5px 0 5px 0;
-    box-shadow: 0 0 5px #000;
-    background-position: 0 100%;
+    padding: 10px 0 0 0;
     width: 100%;
+    }
+
+.post .post-info a
+    {
+    display: inline;
     }
 
 .post .post-info div
     {
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.08);
     padding: 5px 0;
     float: left;
     min-height: 20px;
