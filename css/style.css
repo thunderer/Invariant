@@ -8,7 +8,7 @@ html, body
     padding: 0;
     border: none;
     background:
-        url('../img/triangles.jpg')
+        url('../img/triangles-min.jpg')
         #333 center center fixed;
     background-size: cover;
     color: #000;
@@ -311,6 +311,15 @@ blockquote
     text-align: justify;
     }
 
+.comments img
+    {
+    display: block;
+    float: left;
+    margin: 5px 10px 5px 0;
+    box-shadow: 0 0 5px #000;
+    background: #000;
+    }
+
 .comments .comments-header
     {
     font-size: 36px;
@@ -332,13 +341,19 @@ blockquote
 .comments ul li
     {
     background: #EEE;
-    padding: 10px;
+    padding: 5px 10px 1px 10px;
     margin: 5px 0 0 0;
+    box-shadow: 0 0 1px #000;
     }
 
 .comments ul li:hover
     {
     background: #DDD;
+    }
+
+.comments ul li p
+    {
+    margin: 10px 0;
     }
 
 .comments-form

@@ -22,7 +22,10 @@
         Komentarze (<?php echo get_comments_number(); ?>)
     </div>
     <ul class="comments-content">
-        <?php wp_list_comments(); ?>
+        <?php echo wp_list_comments(array(
+            'echo' => false,
+            'avatar_size' => 40,
+            )); ?>
     </ul>
 </div>
 <?php endif; ?>
