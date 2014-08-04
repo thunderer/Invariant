@@ -6,6 +6,7 @@
         <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="/wp-content/themes/invariant/css/style.css" />
         <link rel="stylesheet" href="/wp-content/themes/invariant/css/highlight/railscasts.css">
+        <?php wp_head(); ?>
     </head>
     <body>
 
