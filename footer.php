@@ -7,5 +7,6 @@
 
         <script language="javascript" src="/wp-content/themes/invariant/js/highlight.pack.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
+        <?php wp_footer(); ?>
     </body>
 </html>
